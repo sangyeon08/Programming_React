@@ -1,33 +1,23 @@
-// h1에 있는 슷자 요소를 가져오자
-let count = 0;
-const counter = document.getElementsByTagName('counter');
+let number = 0;
 
-const plusButton = document.getElementById('increment');
+// h1에 있는 숫자 요소를 가져오자
+// const resultH1 = document.getElementsByTagName("h1")[0];
+const resultH1 = document.getElementById("result");
+// button에 있는 + 요소를 가져오자
+// const plusButton = document.getElementsByTagName("button")[0];
+// const plusButton = document.getElementsByClassName("plus")[0];
 
-plusButton.onclick = () => {
-    count++;
-
-    counter.textContent = count;
-};
-
-
-
-
-// const plusButton = document.getElementsByTagName('increment');
-// plusButton.addEventListener('click', () => {
-//     count++;
-//     counter.textContent = count;
+// plusButton.addEventListener("click", () => {
+//     number++;
+//     resultH1.innerHTML = number;
 // });
+// plusButton.onclick = () => {
+//     number++;
+//     resultH1.innerHTML = number;
+// };
 
-
-// const counter = document.getElementsByTagNamej('counter');
-//         const incrementButton = document.getElementById('increment');
-
-//         let count = 0;
-
-//         incrementButton.addEventListener('click', () => {
-//             count++;
-//             counter.textContent = count;
-//         });
-
-
+// function plus() {
+const plus = () => {
+    number++;
+    resultH1.innerHTML = number;
+}
