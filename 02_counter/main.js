@@ -17,7 +17,23 @@ const resultH1 = document.getElementById("result");
 // };
 
 // function plus() {
-const plus = () => {
-    number++;
+const plus = (value) => {
+    number += value;
     resultH1.innerHTML = number;
 }
+
+const reset = () => {
+    number = 0;
+    resultH1.innerHTML = number;
+}
+
+// const start = () => {
+//     setInterval(() => {
+//         number++;
+//         resultH1.innerHTML = number;
+//     }, 1000);
+// }
+
+// const stop = () => {
+//     clearInterval(interval);
+// }
