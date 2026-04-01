@@ -43,3 +43,5 @@ render();
 // const stop = () => {
 //     clearInterval(interval);
 // }
+
+// npm install을 하면 package.json에 적힌 패키지들을 설치함!
