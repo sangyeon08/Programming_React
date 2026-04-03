@@ -9,12 +9,14 @@ function CounterApp() {
 
   return (
     <>
-      <button
+      <h1>0</h1>
+      <button>+</button>
+      {/* <button
           className="counter"
           onClick={() => setCount((count) => count + 1)}
         >
           Count is {count}
-        </button>
+        </button> */}
     </>
   )
 }
