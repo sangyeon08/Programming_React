@@ -1,23 +1,17 @@
 function TodoListApp() {
     return (
-        <div>
-            <h1>No Think, Do IT</h1>
-            <form>
-                <input type="text" placeholder="추가해!" />
-                <button type="submit">Add</button>
+        <div className="todo">
+            <h1 className="todo__title">No Think, Do IT</h1>
+            <form className="todo__form">
+                <input type="text" placeholder="할 일을 입력하세요!" className="todo__input"/>
+                <button type="submit" className="todo__button todo__button--add">Add</button>
             </form>
             <ul>
                 <li>
-                    <input type="checkbox" id="chk-1" />
-                    <label htmlFor="chk-1">think</label>
-                    <button type="button">✏️</button>
-                    <button type="button">❌</button>
-                </li>
-                <li>
                     <input type="checkbox" id="chk-2"/>
-                    <label htmlFor="chk-2">do</label>
-                    <button type="button">✏️</button>
-                    <button type="button">❌</button>
+                    <label htmlFor="chk-2" className="todo__label">think</label>
+                    <button type="button" className="todo__button todo__button__edit">✏️</button>
+                    <button type="button" className="todo__button todo__button__delete">❌</button>
                 </li>
             </ul>
         </div>
