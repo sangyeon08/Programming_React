@@ -26,11 +26,20 @@ function TodoListApp() {
         new Todo(text)
     ]);
 
+    const toggleTodo = (id) => {
+        setTodos((todos) =>
+            //todos에서 하나씩 써내어 todo.  todo의 id와 id가 같다면, 기존 todo.isCompleted 값 수정. 하고 아니면 그래도.
+            todos.map((todo)=>
+                todo.id === id ? {...todo, isCompleted: !todo.isCompleted} : todo
+            )  
+        )
+    }
+
     return (
         <div className="todo">
             <TodoHeader />
             <TodoAdder addTodo={addTodo} />
-            <TodoList todos={todos} />
+            <TodoList todos={todos} toggleTodo={toggleTodo} />
         </div>
     )
 }
