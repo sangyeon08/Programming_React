@@ -42,7 +42,7 @@ function TodoListApp() {
     }
 
     const editTodo = (id, newText) => {
-        //todos 하나씩 꺼내어 todo. id가 같으면, 복사하고, text 속성값 newText로 수정하자
+        //todos 하나씩 꺼내어 todo. id가 같으면, 복사하고, text 속성값 newText로 수정하자.
         setTodos((todos) =>
             todos.map((todo) =>
                 todo.id === id ? {...todo, text: newText} : todo
