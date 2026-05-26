@@ -21,6 +21,7 @@
     margin-right: 10px;
     flex: 1;    /* display: flex 안의 아이템 중 여유 공간만큼 늘리자 */
 }
+
 .todo__button {
     padding: 10px;
     border: none;
@@ -48,6 +49,11 @@
     margin: 0 10px;
     flex: 1;
 }
+
+.todo__input--edit {
+    flex: 1;
+}
+
 .todo__button--edit,
 .todo__button--delete {
     font-size: 0.8rem;
